@@ -57,8 +57,6 @@ def list_paper(img):
     bottom = max(x)
     left = min(y)
     right = max(y)
-
-    # img = cv2.bitwise_and(img, img, mask=mask)
     img = img[up:bottom, left:right]
 
     return img

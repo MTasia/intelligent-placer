@@ -27,8 +27,3 @@ if __name__ == '__main__':
         ans = intelligent_placer(img_path, poly)
         print("test number " + str(i))
         print_ans(ans)
-
-# print(intelligent_placer('photos/tests/test1.jpg', np.array([[0, 10], [10, 10], [10, 0]])))
-# print(intelligent_placer('photos/tests/test2.jpg', np.array([[0, 0], [0, 2], [2, 2], [2, 0]])))
-# print(intelligent_placer('photos/tests/test4.jpg', np.array([[3, 10], [0, 4], [5, 0], [10, 4], [8, 10]])))
-# print(intelligent_placer('photos/tests/test5.jpg', np.array([[3, 10], [0, 4], [5, 0], [10, 4], [8, 10]])))
