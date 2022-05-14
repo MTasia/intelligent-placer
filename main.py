@@ -20,7 +20,7 @@ def print_ans(answer):
 
 
 if __name__ == '__main__':
-    for i in range(1, 2):
+    for i in range(1, 4):
         img_path = 'photos/tests/test' + str(i) + '.jpg'
         poly_point = get_poly('photos/tests/poly' + str(i) + '.txt')
         poly = np.array(poly_point)
