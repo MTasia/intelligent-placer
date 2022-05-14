@@ -134,10 +134,10 @@ def find(elements: np.array, list: np.array, st_x: int, st_y: int):
     if len(elements) == 0:
         return True
     while list[0, :].size - st_y > elements[0][0, :].size or list[:, 0].size - st_x > elements[0][:, 0].size:
-        new_list, result = try_insert(st_x, st_y, list, elements[0])
-        if result:
-            result = find(elements[1:], new_list, 0, 0)
-            if result:
+        needs, res = try_insert(st_x, st_y, list, elements[0])
+        if res:
+            res = find(elements[1:], needs, 0, 0)
+            if res:
                 return True
             else:
                 if list[:, 0].size - st_x > elements[0][:, 0].size:
